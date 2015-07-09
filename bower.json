@@ -1,0 +1,19 @@
+{
+  "name": "2.3",
+  "version": "0.0.0",
+  "authors": [
+    "Brent Thomas <brentmt24@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+  "dependencies": {
+    "reset-css": "~2.0.20110126",
+    "fontawesome": "~4.3.0"
+  }
+}
