@@ -1,8 +1,13 @@
 
 @import 'reset-css/reset';
 @import 'font-awesome';
+$theme-color-1: black;
+$theme-color-2: white;
+$theme-color-3: #B3B3B3;
+$theme-color-4:#FF3C53;
 @import 'bourbon';
 @import 'neat';
+
 
 html {
   box-sizing: border-box;
@@ -10,17 +15,61 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+.logo {
+    @include outer-container(103px);
+}
+.logo img {
+    width: 100%;
+    margin: 1em;
+}
 body {
-    background: black;
-    color:#B3B3B3;
+    background: $theme-color-1;
+    color: $theme-color-3;
 }
-.item img {
-    zoom:60%;
+.item{
+  @include outer-container(100%);
+  margin: 2em 0;
 }
-.item h1 {
+.image{
+    @include span-columns (6);
+    @include shift(3);
+    img {
+        zoom:60%;
+        display:block;
+    }
+}
+.details {
+    @include span-columns (2);
+}
+h1 {
  display: inline;
  font-size: 1.4em;
  font-weight: 600;
 font-family: Arial;
-color: #FF0000;
+}
+.details h1 {
+    color:$theme-color-4;
+    font-size: 1.2em;
+}
+.image h1 {
+    color:$theme-color-3 ;
+}
+.image p {
+    display: inline;
+}
+footer {
+    @include outer-container (100%);
+    p {
+        text-align: center;
+    }
+    a {
+        display: inline-block;
+    }
+    img {
+        height:4em;
+    }
+.footer-links {
+    @include span-columns (4);
+    @include shift(4);
+    }
 }
