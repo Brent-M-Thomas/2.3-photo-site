@@ -1,0 +1,26 @@
+
+@import 'reset-css/reset';
+@import 'font-awesome';
+@import 'bourbon';
+@import 'neat';
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+    background: black;
+    color:#B3B3B3;
+}
+.item img {
+    zoom:60%;
+}
+.item h1 {
+ display: inline;
+ font-size: 1.4em;
+ font-weight: 600;
+font-family: Arial;
+color: #FF0000;
+}
