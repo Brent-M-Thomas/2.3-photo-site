@@ -1852,6 +1852,34 @@ html {
 *, *:before, *:after {
   box-sizing: inherit; }
 
+.menu {
+  float: right; }
+  .menu i {
+    display: none; }
+
+@media screen and (max-width: 480px) {
+  .menu i {
+    display: block; } }
+
+.menu-item {
+  display: inline-block;
+  color: #FF3C53;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding-right: .5rem; }
+
+.fa-bars {
+  text-align: right; }
+
+@media screen and (max-width: 480px) {
+  .menu-item {
+    display: none; } }
+
+@media screen and (max-width: 480px) {
+  .menu:hover .menu-item {
+    display: block; } }
+
 .logo {
   max-width: 103px;
   margin-left: auto;
@@ -1887,9 +1915,12 @@ body {
   margin-left: 25.58941%; }
   .image:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 1024px) {
+    .image {
+      display: block; } }
   .image img {
     width: 100%;
-    margin: auto;
+    margin-bottom: 10px;
     display: block; }
 
 .details {
@@ -1899,12 +1930,24 @@ body {
   width: 14.70196%; }
   .details:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 1024px) {
+    .details {
+      float: left;
+      display: block;
+      margin-right: 4.82916%;
+      width: 100%;
+      margin-left: 34.94305%; }
+      .details:last-child {
+        margin-right: 0; }
+      .details li {
+        display: inline-block; } }
 
 h1 {
   display: inline;
   font-size: 1.4em;
   font-weight: 600;
-  font-family: Arial; }
+  font-family: Arial;
+  text-align: center; }
 
 .details h1 {
   color: #FF3C53;
@@ -1929,12 +1972,15 @@ footer {
   footer a {
     display: inline-block; }
   footer img {
-    height: 4em; }
-  footer .footer-links {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 31.76157%;
-    margin-left: 34.11922%; }
-    footer .footer-links:last-child {
-      margin-right: 0; }
+    height: 4rem;
+    margin: 1rem; }
+
+.footer-links {
+  display: flex;
+  justify-content: center; }
+
+.footer-links img {
+  opacity: 0.5; }
+
+.footer-links:hover img {
+  opacity: 1; }
