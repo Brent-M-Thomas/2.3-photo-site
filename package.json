@@ -10,6 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "broccoli": "^0.16.4",
-    "broccoli-lr": "^0.1.0"
+    "broccoli-lr": "^0.1.0",
+    "broccoli-merge-trees": "^0.2.1",
+    "broccoli-sass": "^0.6.6"
   }
 }
