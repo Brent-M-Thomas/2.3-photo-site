@@ -32,13 +32,18 @@ html {
     font-size: 1.2rem;
     padding-right: .5rem;
 }
+.fa-bars {
+    text-align: right;
+}
 .menu-item {
     @include media($phone) {
     display: none;
     }
 }
-.menu i:hover .menu-item{
+@include media($phone) {
+    .menu:hover .menu-item{
     display: block;
+    }
 }
 .logo {
     @include outer-container(103px);
@@ -107,12 +112,13 @@ footer {
         margin: 1rem;
     }
 }
-.footer-links img{
-    @include span-columns (4);
-    @include shift(4);
+.footer-links {
+    display: flex;
+    justify-content: center;
+}
+.footer-links img {
     opacity: 0.5;
 }
-.footer-links:hover .footer-links img {
-    background: red;
+.footer-links:hover img {
     opacity: 1;
 }
